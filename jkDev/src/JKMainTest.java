@@ -2,6 +2,7 @@
 public class JKMainTest {
 
 	/**
+	 * test-JK
 	 * @param args
 	 */
 	public static void main(String[] args) {
