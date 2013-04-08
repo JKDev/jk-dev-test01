@@ -6,7 +6,7 @@ public class JKMainTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println( "12=1111=============== 2013-04-09 =========================" );
+		System.out.println( "111112=1111=============== 2013-04-09 =========================" );
 		
 		System.out.println(" JK Test DDDDDDDDDDDDDDDDDDDDDDDDDDD");
 	}
