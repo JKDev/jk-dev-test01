@@ -2,7 +2,7 @@
 public class JKMainTest {
 
 	/**
-	 * test-JK
+	 * 2013-04-09 code test
 	 * @param args
 	 */
 	public static void main(String[] args) {
