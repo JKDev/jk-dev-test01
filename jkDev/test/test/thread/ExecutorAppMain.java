@@ -24,6 +24,7 @@ public class ExecutorAppMain {
 		testCall();
 	}
 
+	//++++
 	private static void testCall() {
 		// TODO Auto-generated method stub
 		int nThreads = 10;
@@ -42,7 +43,7 @@ public class ExecutorAppMain {
 		completionService.submit( c3 );
 		
 		TItem tmp = null;
-		for(int i=0;i<400;i++){
+		for(int i=0;i<400;i++){ //
 			tmp = new TItem();
 			tmp.setCmd("cmd_" + i);
 			m.add( tmp );
