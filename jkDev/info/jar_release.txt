@@ -4,3 +4,6 @@ cojen.jar
 
 dirmi.jar
 2 http://sourceforge.net/apps/mediawiki/dirmi/index.php?title=Dirmi
+
+guava.jar
+https://code.google.com/p/guava-libraries/
