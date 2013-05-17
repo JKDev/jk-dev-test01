@@ -31,7 +31,7 @@
         </jar>
     </target>
 
-    <target name="run" depends="compile">
+    <target name="run" depends="init">
         <java  classname="${mainclass}">
             <classpath>
                 <pathelement path="${build}" />
