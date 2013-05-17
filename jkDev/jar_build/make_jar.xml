@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="project-build" basedir=".">
+        <target name="init">
+                <property name="build" value="bin" />
+                <property name="home" value="." />
+                <property name="src" value="src" />
+                <property name="dist" value="dist" />
+                <property name="jarname" value="test-1.0.jar" />
+                <property name="mainclass" value="com.shinnara.deskeyserver.DesKeyServer" />
+        </target>
+<!-- 
+        <target name="compile" depends="init">
+            <mkdir dir="${build}" />
+            <javac srcdir="${src}"  destdir="${build}" >
+                <classpath>
+                    <fileset dir="lib">
+                        <include name="**/*.jar" />
+                    </fileset>
+                </classpath>
+            </javac>
+        </target>
+-->
+    <target name="make-jar" depends="init">
+        <mkdir dir="${dist}" />
+        <jar destfile="${dist}/${jarname}"
+             basedir="../${build}" >
+             <manifest>
+                <attribute name="Main-Class" value="${mainclass}" />
+             </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="compile">
+        <java  classname="${mainclass}">
+            <classpath>
+                <pathelement path="${build}" />
+                <fileset dir="lib">
+                    <include name="**/jar" />
+                </fileset>
+            </classpath>
+        </java>
+    </target>
+
+        <target name="main" depends="compile" />
+
+        <target name="clean" depends="init">
+                <delete dir="${build}" />
+        </target>
+
+        <target name="clean-bulid" depends="clean,compile" />
+
+</project>
+
