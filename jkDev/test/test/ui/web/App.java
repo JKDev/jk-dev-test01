@@ -67,7 +67,7 @@ public class App {
 				System.out.println( "[completed]" + event );
 				Browser browser = (Browser)event.widget;
 				String html = browser.getText();
-				System.out.println( html ); // save File
+				System.out.println( html ); // save File  , String을 temp파일로 저장함.
 			}
 			
 			@Override
